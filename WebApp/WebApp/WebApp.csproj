@@ -35,7 +35,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Forms\Controllers\" />
-    <Folder Include="Areas\Forms\Views\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 

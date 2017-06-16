@@ -11,7 +11,8 @@
 
     <link href="~/css/style.default.css" rel="stylesheet">
     <script src="~/lib/jquery/dist/jquery.js"></script>
-
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/custom.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
@@ -21,12 +22,6 @@
 
 <body>
 
-
-
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
-</div>
 
 <section>
 
@@ -59,8 +54,8 @@
 
         <h5 class="sidebartitle">Navigation</h5>
         <ul class="nav nav-pills nav-stacked nav-bracket">
-            <li class="active"><a asp-controller="Home" asp-action="Index"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-            <li><a asp-controller="Home" asp-action="Email"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Email"><span class="pull-right badge badge-success">2</span><i class="fa fa-envelope-o"></i> <span>Email</span></a></li>
             <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>Forms</span></a>
                 <ul class="children">
                     <li><a asp-area="Forms" asp-controller="Home" asp-action="GeneralForms"><i class="fa fa-caret-right"></i> General Forms</a></li>
@@ -684,7 +679,7 @@
 
     <script src="~/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="~/js/jquery-ui-1.10.3.min.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
+
     <script src="~/js/modernizr.min.js"></script>
     <script src="~/js/jquery.sparkline.min.js"></script>
     <script src="~/js/toggles.min.js"></script>
@@ -693,7 +688,7 @@
 
 
 
-    <script src="~/js/custom.js"></script>
+
 
 </environment>
 
