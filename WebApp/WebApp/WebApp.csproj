@@ -33,5 +33,10 @@
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Forms\Controllers\" />
+    <Folder Include="Areas\Forms\Views\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
 
 </Project>

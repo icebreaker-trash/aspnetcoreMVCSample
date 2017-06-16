@@ -79,6 +79,8 @@ namespace WebApp
 
             app.UseMvc(routes =>
             {
+                //= GeneralForms
+                routes.MapRoute("FormsAreaRoute", "{area:exists}/{controller}/{action=GeneralForms}/{id?}");
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

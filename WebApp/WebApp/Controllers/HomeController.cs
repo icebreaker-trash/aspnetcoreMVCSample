@@ -10,20 +10,15 @@ namespace WebApp.Controllers
     {
         public IActionResult Index()
         {
+
+            ViewBag.navigation = "Dashboard";
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Email()
         {
-            ViewData["Message"] = "Your application description page.";
 
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
+            ViewBag.navigation = nameof(Email);
             return View();
         }
 
