@@ -35,6 +35,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Forms\Controllers\" />
+    <Folder Include="Areas\UIELements\Controllers\" />
+    <Folder Include="Areas\Tables\" />
+    <Folder Include="Areas\BugTracker\" />
+    <Folder Include="Areas\Maps\" />
+    <Folder Include="Areas\Pages\" />
+    <Folder Include="Areas\SkinsAndLayouts\" />
+    <Folder Include="Areas\UIELements\Views\Home\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 

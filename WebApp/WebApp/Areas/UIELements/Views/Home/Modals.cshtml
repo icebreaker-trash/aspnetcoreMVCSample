@@ -1,0 +1,195 @@
+
+@{
+    ViewData["Title"] = "Modals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="contentpanel">
+      
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Optional Sizes</h5>
+                    <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code></p>
+                </div>
+                <div class="panel-body">
+                    <button class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal-lg">Large Modal</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small Modal</button>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">External Content</h5>
+                    <p>If a remote URL is provided, content will be loaded one time via jQuery's load method and injected into the <code>.modal-content</code> div.</p>
+                </div>
+                <div class="panel-body">
+                    <a href="ajax/remote.html" class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal">Launch Modal</a>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Static Background</h5>
+                    <p>Let's you specify static for a backdrop which doesn't close the modal on click by adding data attributes <code>data-backdrop="static"</code> to a modal.</p>
+                </div>
+                <div class="panel-body">
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-static">Launch Modal</button>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Tabs In Modal</h5>
+                    <p>A dynamic tab functionality inside a modal.</p>
+                </div>
+                <div class="panel-body">
+                    <a href="ajax/tabs.html" class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal-tabs">Launch Modal</a>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Accordion In Modal</h5>
+                    <p>A collapsible components inside a modal</p>
+                </div>
+                <div class="panel-body">
+                    <a href="ajax/accordion.html" class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal-accordion">Launch Modal</a>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Panel As Modal</h5>
+                    <p>Easily add panel inside of a modal box.</p>
+                </div>
+                <div class="panel-body">
+                    <a href="ajax/panel.html" class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal-panel">Launch Modal</a>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+        <div class="col-sm-6 col-md-4">
+            <div class="panel panel-default panel-alt">
+                <div class="panel-heading">
+                    <div class="panel-btns">
+                        <a href="" class="panel-close">&times;</a>
+                        <a href="" class="minimize">&minus;</a>
+                    </div><!-- panel-btns -->
+                    <h5 class="panel-title">Photo Viewer</h5>
+                    <p>A facebook like photo viewer with details on right.</p>
+                </div>
+                <div class="panel-body">
+                    <a href="ajax/photo-viewer.html" class="btn btn-primary mr5" data-toggle="modal" data-target=".bs-example-modal-photo">Launch Modal</a>
+                </div>
+            </div><!-- panel -->
+        </div>
+        
+    </div><!-- row -->
+      
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                <h4 class="modal-title">Large Modal</h4>
+            </div>
+            <div class="modal-body">...</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                <h4 class="modal-title">Small Modal</h4>
+            </div>
+            <div class="modal-body">...</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-static" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                <h4 class="modal-title">Static Background</h4>
+            </div>
+            <div class="modal-body">
+                Specify static for a backdrop which doesn't close the modal on click.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-tabs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-accordion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-panel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-photo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-photo-viewer">
+        <div class="modal-content"></div>
+    </div>
+</div>
+
