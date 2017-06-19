@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.Maps.Controllers
 {
+    [Area("Maps")]
     public class HomeController : Controller
     {
         public IActionResult Index()

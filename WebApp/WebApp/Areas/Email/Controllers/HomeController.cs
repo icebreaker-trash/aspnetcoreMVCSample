@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.Email.Controllers
 {
+    [Area("Email")]
     public class HomeController : Controller
     {
         public IActionResult Index()

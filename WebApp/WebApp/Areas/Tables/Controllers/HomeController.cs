@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.Tables.Controllers
 {
+    [Area("Tables")]
     public class HomeController : Controller
     {
         public IActionResult Index()

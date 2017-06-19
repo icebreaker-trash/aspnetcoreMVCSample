@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.BugTracker.Controllers
 {
+    [Area("BugTracker")]
     public class HomeController : Controller
     {
         public IActionResult Index()

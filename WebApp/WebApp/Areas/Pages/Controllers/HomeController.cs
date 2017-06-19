@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.Pages.Controllers
 {
+    [Area("Pages")]
     public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
             ViewBag.navigation = "Calendar";

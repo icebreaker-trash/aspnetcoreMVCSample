@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Areas.SkinsAndLayouts.Controllers
 {
+    [Area("SkinsAndLayouts")]
     public class HomeController : Controller
     {
         public IActionResult Index()
