@@ -1,0 +1,115 @@
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+
+<div class="contentpanel">
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">Google Maps</h4>
+            <p><a href="http://hpneo.github.io/gmaps/" target="_blank">gmaps.js</a> allows you to use the potential of Google Maps in a simple way.</p>
+        </div><!-- panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="subtitle">Basic Map</h5>
+                    <p>Some basic example of using google maps with latitude and longitude defined.</p>
+                    <div id="gmap" style="height: 300px"></div>
+                </div><!-- col-md-6 -->
+                <div class="col-md-6">
+                    <h5 class="subtitle">Map With Marker</h5>
+                    <p>Some example of using google maps with markers enabled</p>
+                    <div id="gmap-marker" style="height: 300px"></div>
+                </div><!-- col-md-6 -->
+            </div><!-- row -->
+        </div><!-- panel-body -->
+    </div><!-- panel -->   
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">jVectorMap</h4>
+            <p><a href="http://jvectormap.com/" target="_blank">jVectorMap</a> uses only native browser technologies like JavaScript, CSS, HTML, SVG or VML. No Flash or any other proprietary browser plug-in is required.</p>
+        </div><!-- panel-heading -->
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="subtitle">World Map</h5>
+                    <p>Some basic example of using vector map displaying the map of the world.</p>
+                    <div id="vectormap-world" style="height: 300px"></div>
+                </div><!-- col-md-6 -->
+                <div class="col-md-6">
+                    <h5 class="subtitle">Map By Country</h5>
+                    <p>Below is an example of vector map that display only by country (ie United States)</p>
+                    <div id="vectormap-country" style="height: 300px"></div>
+                </div><!-- col-md-6 -->
+            </div><!-- row -->
+        </div><!-- panel-body -->
+    </div><!-- panel -->
+        
+</div><!-- mainpanel -->
+
+<script src="~/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="~/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="~/js/jquery-jvectormap-us-aea-en.js"></script>
+
+@*<script src="http://maps.google.com/maps/api/js?sensor=true"></script>*@
+<script src="~/js/gmaps.js"></script>
+
+<script>
+    jQuery(document).ready(function(){
+        
+        "use strict";
+        
+        new GMaps({
+            div: '#gmap',
+            lat: -12.043333,
+            lng: -77.028333
+        });
+        
+        var map_marker = new GMaps({
+            div: '#gmap-marker',
+            lat: -12.043333,
+            lng: -77.028333
+        });
+        
+        map_marker.addMarker({
+            lat: -12.043333,
+            lng: -77.028333,
+            click: function(e) {
+                alert('You clicked in this marker');
+            }
+        });
+        
+        jQuery('#vectormap-world').vectorMap({
+            map: 'world_mill_en',
+            regionStyle: {
+                initial: {
+                    fill: '#a5a7aa'
+                },
+                hover: {
+                    fill: '#6e7072'
+                }     
+            },
+            backgroundColor: '#fcfcfc'
+        });
+        
+        jQuery('#vectormap-country').vectorMap({
+            map: 'us_aea_en',
+            regionStyle: {
+                initial: {
+                    fill: '#a5a7aa'
+                },
+                hover: {
+                    fill: '#6e7072'
+                }     
+            },
+            backgroundColor: '#fcfcfc'
+        });
+        
+    });
+</script>
+

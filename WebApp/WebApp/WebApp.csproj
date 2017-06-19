@@ -34,13 +34,19 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\BugTracker\Controllers\" />
+    <Folder Include="Areas\BugTracker\Views\" />
+    <Folder Include="Areas\Email\Controllers\" />
     <Folder Include="Areas\Forms\Controllers\" />
+    <Folder Include="Areas\Maps\Controllers\" />
+    <Folder Include="Areas\Maps\Views\Home\" />
+    <Folder Include="Areas\Pages\Controllers\" />
+    <Folder Include="Areas\Pages\Views\Home\" />
+    <Folder Include="Areas\SkinsAndLayouts\Controllers\" />
+    <Folder Include="Areas\SkinsAndLayouts\Views\Home\" />
+    <Folder Include="Areas\Tables\Controllers\" />
+    <Folder Include="Areas\Tables\Views\Home\" />
     <Folder Include="Areas\UIELements\Controllers\" />
-    <Folder Include="Areas\Tables\" />
-    <Folder Include="Areas\BugTracker\" />
-    <Folder Include="Areas\Maps\" />
-    <Folder Include="Areas\Pages\" />
-    <Folder Include="Areas\SkinsAndLayouts\" />
     <Folder Include="Areas\UIELements\Views\Home\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
