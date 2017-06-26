@@ -582,13 +582,13 @@ strong {
     background: transparent url(../images/plus-white.png) no-repeat 92% center; 
 }
 
-.nav-bracket > li.nav-parent > a:focus {
-    background-color: none;
-    color: #8F939E;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
+    .nav-bracket > li.nav-parent > a:focus {
+        background-color: none;
+        color: #8F939E;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
 .nav-bracket > li.nav-parent > a:hover,
 .nav-bracket > li.nav-parent > a:active {
@@ -806,7 +806,7 @@ strong {
 }
 
 .pageheader .fa-file-text {
-    padding: 6px 10px;`
+    padding: 6px 10px;
 }
 
 .pageheader .fa-map-marker {

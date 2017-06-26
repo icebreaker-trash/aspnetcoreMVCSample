@@ -40,11 +40,12 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddDbContext<UserDbContext>(options =>
+                options.UseSqlServer(Configuration["Data:WebApp:ConnectionString"]));
+            services.AddDbContext<ApplicationDbContext>(options=>
+                options.UseSqlServer(Configuration["Data:WebApp:ConnectionString"]));
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
